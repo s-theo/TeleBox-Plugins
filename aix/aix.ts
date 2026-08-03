@@ -6136,7 +6136,9 @@ class AIXPlugin extends Plugin {
       new CollapseFeature(this.configManagerPromise),
       new TelegraphFeature(this.configManagerPromise),
       new TimeoutFeature(this.configManagerPromise),
-    ].forEach((feature) => this.featureRegistry.register(feature));
+    ].forEach((feature) => {
+      this.featureRegistry.register(feature);
+    });
 
     this.featureRegistry.register(
       new SearchFeature(

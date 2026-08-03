@@ -1,11 +1,8 @@
 # TeleBox-Plugins
 
-Theo's custom TeleBox plugin collection, organized in the same one-directory-per-plugin layout as the official plugin repositories.
+Theo's custom plugin collection for Classic [TeleBox](https://github.com/TeleBoxOrg/TeleBox), organized in the same one-directory-per-plugin layout as the official plugin repository.
 
-## Branches
-
-- `main`: plugins for Classic TeleBox.
-- `next`: plugins for TeleBox-Next.
+TeleBox-Next versions are maintained separately in [s-theo/TeleBox-Next-Plugins](https://github.com/s-theo/TeleBox-Next-Plugins).
 
 ## Plugins
 
@@ -14,3 +11,10 @@ Theo's custom TeleBox plugin collection, organized in the same one-directory-per
 - `sink`: manage Sink short links.
 - `t`: text-to-speech powered by edge-tts and ffmpeg.
 - `yvlu`: generate quote stickers and manage a personal sticker set.
+
+## Development
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run format:check
+```
