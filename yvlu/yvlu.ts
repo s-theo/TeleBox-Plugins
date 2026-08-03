@@ -1,16 +1,23 @@
 // YVLU Plugin - 生成文字语录贴纸 (TGS + 自定义文字 + API配置 完整版)
-//@ts-nocheck
 
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { createDirectoryInAssets } from '@utils/pathHelpers'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Plugin } from '@utils/pluginBase'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { getPrefixes } from '@utils/pluginManager'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { getGlobalClient } from '@utils/runtimeManager'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { reviveEntities } from '@utils/tlRevive'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import axios from 'axios'
 import { execFile } from 'child_process'
 import * as fs from 'fs'
 import * as path from 'path'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Api } from 'teleproto'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { CustomFile } from 'teleproto/client/uploads.js'
 import { promisify } from 'util'
 

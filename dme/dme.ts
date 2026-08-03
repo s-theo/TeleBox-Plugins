@@ -10,12 +10,17 @@
  * 3. 回复某条消息 + .dme -r : 防撤回删除从该消息开始的所有后续消息（仅限自己的）
  */
 
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { getEntityWithHash } from '@utils/entityHelpers'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Plugin } from '@utils/pluginBase'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { getGlobalClient } from '@utils/runtimeManager'
 import * as fs from 'fs'
 import * as path from 'path'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Api, type TelegramClient } from 'teleproto'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { CustomFile } from 'teleproto/client/uploads'
 
 // 常量配置

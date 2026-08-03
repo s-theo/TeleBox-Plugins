@@ -1,9 +1,15 @@
+// Classic TeleBox supplies this plugin's runtime dependencies.
+
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { createDirectoryInAssets } from '@utils/pathHelpers'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Plugin } from '@utils/pluginBase'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import axios from 'axios'
 import { exec } from 'child_process'
 import * as fs from 'fs/promises'
 import path from 'path'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Api } from 'teleproto'
 import { promisify } from 'util'
 

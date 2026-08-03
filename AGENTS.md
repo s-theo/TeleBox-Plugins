@@ -28,9 +28,11 @@ pnpm run format:check
 git diff --check
 ```
 
-Use `pnpm run format` only when formatting and organize-import changes are intended, then review the full diff. Biome provides static TypeScript/JSON checks only; this repository has no Classic TeleBox build, typecheck or runtime-test harness. Do not add Prettier or claim host-level validation.
+Use `pnpm run format` only when formatting and organize-import changes are intended, then review the full diff. Biome provides static TypeScript/JSON checks only; this repository has no Classic TeleBox build, repository-local TypeScript compiler/typecheck script or runtime-test harness. Do not add Prettier or claim host-level validation.
 
 All plugin files, including `aix/aix.ts`, are covered by formatter, linter and organize-import checks. Review the full diff whenever formatting a large legacy plugin.
+
+`tsconfig.json` supplies editor diagnostics and Node.js globals through `@types/node`, but the repository deliberately does not install host runtime packages. Keep unresolved host imports on adjacent `@ts-expect-error` directives; do not replace them with broad `@ts-nocheck`, local shims or standalone runtime dependencies.
 
 Do not execute plugin handlers as local tests: they can access external services, run local binaries, upload media or delete Telegram messages. Runtime validation requires an explicitly authorized Classic TeleBox instance.
 

@@ -1,18 +1,31 @@
+// Classic TeleBox supplies this plugin's runtime dependencies.
+
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { createDirectoryInAssets } from '@utils/pathHelpers'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Plugin } from '@utils/pluginBase'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { getPrefixes } from '@utils/pluginManager'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { safeGetReplyMessage } from '@utils/safeGetMessages'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { TelegramFormatter } from '@utils/telegramFormatter'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { TelegraphFormatter } from '@utils/telegraphFormatter'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import axios, { type AxiosInstance, type AxiosRequestConfig, type AxiosResponse } from 'axios'
 import { execFile } from 'child_process'
 import fs from 'fs'
 import http from 'http'
 import https from 'https'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import type { Low } from 'lowdb'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { JSONFilePreset } from 'lowdb/node'
 import * as path from 'path'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import sharp from 'sharp'
+// @ts-expect-error -- provided by the Classic TeleBox host
 import { Api } from 'teleproto'
 import { promisify } from 'util'
 
