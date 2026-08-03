@@ -30,7 +30,7 @@ git diff --check
 
 Use `pnpm run format` only when formatting and organize-import changes are intended, then review the full diff. Biome provides static TypeScript/JSON checks only; this repository has no Classic TeleBox build, typecheck or runtime-test harness. Do not add Prettier or claim host-level validation.
 
-Biome still lints `aix/aix.ts`, but that legacy file is narrowly excluded from formatter and organize-import checks to avoid an unrelated whole-file rewrite. Change that exception only in a dedicated, explicitly reviewed formatting task.
+All plugin files, including `aix/aix.ts`, are covered by formatter, linter and organize-import checks. Review the full diff whenever formatting a large legacy plugin.
 
 Do not execute plugin handlers as local tests: they can access external services, run local binaries, upload media or delete Telegram messages. Runtime validation requires an explicitly authorized Classic TeleBox instance.
 

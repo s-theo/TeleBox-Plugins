@@ -5,7 +5,6 @@
   },
   "formatter": {
     "enabled": true,
-    "includes": ["**", "!aix/aix.ts"],
     "formatWithErrors": false,
     "indentStyle": "space",
     "indentWidth": 2,
@@ -39,7 +38,6 @@
   },
   "assist": {
     "enabled": true,
-    "includes": ["**", "!aix/aix.ts"],
     "actions": {
       "source": {
         "organizeImports": "on"
